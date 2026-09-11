@@ -1,0 +1,121 @@
+{
+ "cand_features": [
+  "street_ratio",
+  "street_partial",
+  "partial_short",
+  "coverage",
+  "gap_to_best",
+  "type_match",
+  "type_conflict",
+  "house_exact",
+  "house_base",
+  "house_suffix_sim",
+  "no_house",
+  "city_match",
+  "city_conflict",
+  "mention_match",
+  "mention_conflict"
+ ],
+ "cand_w": [
+  4.0,
+  1.0,
+  0.3,
+  0.5,
+  2.0,
+  0.3,
+  -0.2,
+  2.5,
+  1.5,
+  0.3,
+  0.0,
+  0.6,
+  -0.3,
+  0.8,
+  -0.8
+ ],
+ "cand_b": 0.0,
+ "reject_features": [
+  "top_score",
+  "margin",
+  "street_ratio",
+  "coverage",
+  "house_exact",
+  "house_base",
+  "no_house",
+  "city_empty",
+  "n_words",
+  "unexplained_words"
+ ],
+ "rej_w": [
+  0.46122,
+  0.49825,
+  12.63407,
+  2.44707,
+  1.41023,
+  1.52836,
+  -0.18352,
+  0.40232,
+  0.23145,
+  -1.56158
+ ],
+ "rej_b": -19.73925,
+ "threshold": 0.6667,
+ "cv": {
+  "ручные веса, отказ (итог)": {
+   "mean": {
+    "top1": 0.9925,
+    "top3": 0.9975,
+    "reject_precision": 0.9901,
+    "reject_recall": 1.0
+   },
+   "std": {
+    "top1": 0.0,
+    "top3": 0.0,
+    "reject_precision": 0.0,
+    "reject_recall": 0.0
+   }
+  },
+  "ручные веса, отказ + city_other": {
+   "mean": {
+    "top1": 0.9925,
+    "top3": 0.9975,
+    "reject_precision": 0.9901,
+    "reject_recall": 1.0
+   },
+   "std": {
+    "top1": 0.0,
+    "top3": 0.0,
+    "reject_precision": 0.0,
+    "reject_recall": 0.0
+   }
+  },
+  "ручные веса, отказ по top_score": {
+   "mean": {
+    "top1": 0.9915,
+    "top3": 0.9965,
+    "reject_precision": 0.9862,
+    "reject_recall": 0.996
+   },
+   "std": {
+    "top1": 0.0012,
+    "top3": 0.0012,
+    "reject_precision": 0.0047,
+    "reject_recall": 0.0049
+   }
+  },
+  "обученные веса, отказ": {
+   "mean": {
+    "top1": 0.9905,
+    "top3": 0.9955,
+    "reject_precision": 0.9823,
+    "reject_recall": 1.0
+   },
+   "std": {
+    "top1": 0.001,
+    "top3": 0.001,
+    "reject_precision": 0.0039,
+    "reject_recall": 0.0
+   }
+  }
+ }
+}
